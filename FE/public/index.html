@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Expenses JWT</title>
+      <link rel="stylesheet" href="../src/css/style.css" />
+   </head>
+   <body>
+      <fieldset>
+         <form action="" class="usersForm">
+            <label for="form__user">Email</label>
+            <input
+               type="text"
+               name="form__email"
+               id="form__email"
+               class="form__email"
+            />
+            <label for="form__password">Clave</label>
+            <input
+               type="password"
+               name="form__password"
+               id="form__password"
+               class="form_password"
+            />            
+               <button name="form__signin" class="form__signin">
+                  Sigin
+               </button>
+               <button name="form__login" class="form__login">Log in</button>
+               <button name="form__logout" class="form__logout">
+                  Log out
+         </button>
+            </div>
+         </form>
+      </fieldset>
+      <fieldset>
+         <form action="" class="expensesForm" method="post">
+            <label for="">Descripción</label>
+            <input
+               type="text"
+               name="form__description"
+               id="form__description"
+               class="form__description"
+            />
+            <label for="">Valor</label>
+            <input
+               type="number"
+               name="form__amount"
+               id="form__amount"
+               class="form__amount"
+               min="0"
+            />
+            <button name="form__post" class="form__post">Enviar</button>
+            <button name="form__get" class="form__get">Obtener</button>
+         </form>
+      </fieldset>
+      <div class="content"></div>
+      <script src="../src/js/index.js"></script>
+   </body>
+</html>
